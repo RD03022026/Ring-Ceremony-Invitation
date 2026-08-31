@@ -238,12 +238,18 @@ p, li {
 .floral-tl { top: 0; left: 0; }
 .floral-br { bottom: 0; right: 0; }
 
-/* Ganesha icon */
+/* Ganesha / decorative icon */
 .ganesha-icon {
   width: clamp(60px, 8vw, 90px);
   margin-bottom: var(--space-4);
   opacity: 0.9;
   animation: fadeInDown 1s ease-out;
+}
+
+.ganesha-icon img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 /* Invitation label */
