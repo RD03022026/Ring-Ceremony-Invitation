@@ -163,10 +163,9 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   background-image: url('assets/bg-floral-light.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  background-repeat: repeat-y;
   overflow-x: hidden;
 }
 
@@ -760,7 +759,8 @@ p, li {
 .footer {
   text-align: center;
   padding: var(--space-12) var(--space-6);
-  border-top: 1px solid var(--color-divider);
+  background: color-mix(in oklab, var(--color-surface) 90%, transparent);
+  backdrop-filter: blur(4px);
 }
 
 .footer-text {
