@@ -53,43 +53,101 @@
 
   <!-- ===== HERO SECTION ===== -->
   <section class="hero" id="hero">
-    <!-- Decorative floral corners -->
+    <!-- Floral corners — watercolor style matching PDF -->
     <div class="floral-corner floral-tl" aria-hidden="true">
-      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <!-- Branch -->
-        <path d="M10 180 Q30 120 60 80 Q90 40 140 15" stroke="var(--floral-stem)" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <!-- Leaves -->
-        <ellipse cx="35" cy="140" rx="8" ry="16" transform="rotate(-30 35 140)" fill="var(--floral-leaf)"/>
-        <ellipse cx="55" cy="95" rx="7" ry="14" transform="rotate(-45 55 95)" fill="var(--floral-leaf)"/>
-        <ellipse cx="80" cy="55" rx="8" ry="15" transform="rotate(-55 80 55)" fill="var(--floral-leaf)"/>
-        <ellipse cx="115" cy="30" rx="7" ry="13" transform="rotate(-60 115 30)" fill="var(--floral-leaf)"/>
-        <!-- Flowers -->
-        <circle cx="30" cy="155" r="9" fill="var(--floral-blue)" opacity="0.7"/>
-        <circle cx="28" cy="152" r="5" fill="var(--floral-blue-light)" opacity="0.8"/>
-        <circle cx="70" cy="70" r="8" fill="var(--floral-blue)" opacity="0.6"/>
-        <circle cx="68" cy="68" r="4" fill="var(--floral-blue-light)" opacity="0.8"/>
-        <circle cx="130" cy="22" r="7" fill="var(--floral-blue)" opacity="0.6"/>
-        <circle cx="128" cy="20" r="4" fill="var(--floral-blue-light)" opacity="0.8"/>
-        <!-- Small buds -->
-        <circle cx="45" cy="120" r="4" fill="var(--floral-lavender)" opacity="0.7"/>
-        <circle cx="95" cy="45" r="4" fill="var(--floral-lavender)" opacity="0.7"/>
+      <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Branch stem -->
+        <path d="M10 220 Q30 160 55 110 Q85 60 130 30 Q165 10 200 8" stroke="var(--floral-stem)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+        <!-- Sage/olive leaves -->
+        <ellipse cx="30" cy="175" rx="9" ry="20" transform="rotate(-35 30 175)" fill="var(--floral-leaf-sage)" opacity="0.6"/>
+        <ellipse cx="45" cy="140" rx="8" ry="17" transform="rotate(-40 45 140)" fill="var(--floral-leaf-olive)" opacity="0.55"/>
+        <ellipse cx="65" cy="95" rx="9" ry="19" transform="rotate(-50 65 95)" fill="var(--floral-leaf-sage)" opacity="0.6"/>
+        <ellipse cx="90" cy="60" rx="8" ry="17" transform="rotate(-55 90 60)" fill="var(--floral-leaf-olive)" opacity="0.55"/>
+        <ellipse cx="120" cy="35" rx="9" ry="18" transform="rotate(-60 120 35)" fill="var(--floral-leaf-sage)" opacity="0.6"/>
+        <ellipse cx="155" cy="18" rx="7" ry="15" transform="rotate(-65 155 18)" fill="var(--floral-leaf-olive)" opacity="0.5"/>
+        <!-- Outline leaves -->
+        <ellipse cx="38" cy="155" rx="7" ry="14" transform="rotate(-30 38 155)" fill="none" stroke="var(--floral-leaf)" stroke-width="1" opacity="0.4"/>
+        <ellipse cx="75" cy="75" rx="7" ry="14" transform="rotate(-48 75 75)" fill="none" stroke="var(--floral-leaf)" stroke-width="1" opacity="0.4"/>
+        <ellipse cx="140" cy="25" rx="6" ry="12" transform="rotate(-58 140 25)" fill="none" stroke="var(--floral-leaf)" stroke-width="1" opacity="0.4"/>
+        <!-- Periwinkle blue flowers -->
+        <g opacity="0.7">
+          <circle cx="25" cy="190" r="11" fill="var(--floral-blue)"/>
+          <circle cx="22" cy="186" r="6" fill="var(--floral-blue-light)"/>
+          <circle cx="28" cy="193" r="4" fill="var(--floral-blue-deep)" opacity="0.6"/>
+          <circle cx="25" cy="190" r="3" fill="var(--floral-yellow)" opacity="0.8"/>
+        </g>
+        <g opacity="0.65">
+          <circle cx="55" cy="125" r="10" fill="var(--floral-blue)"/>
+          <circle cx="53" cy="122" r="5" fill="var(--floral-blue-light)"/>
+          <circle cx="57" cy="127" r="3" fill="var(--floral-blue-deep)" opacity="0.6"/>
+          <circle cx="55" cy="125" r="2.5" fill="var(--floral-yellow)" opacity="0.8"/>
+        </g>
+        <g opacity="0.6">
+          <circle cx="100" cy="50" r="10" fill="var(--floral-blue)"/>
+          <circle cx="98" cy="47" r="5" fill="var(--floral-blue-light)"/>
+          <circle cx="102" cy="52" r="3" fill="var(--floral-blue-deep)" opacity="0.6"/>
+          <circle cx="100" cy="50" r="2.5" fill="var(--floral-yellow)" opacity="0.8"/>
+        </g>
+        <!-- Lavender star flowers -->
+        <g opacity="0.6">
+          <circle cx="42" cy="110" r="5" fill="var(--floral-lavender)"/>
+          <circle cx="42" cy="110" r="2" fill="var(--floral-lavender-light)"/>
+        </g>
+        <g opacity="0.6">
+          <circle cx="80" cy="40" r="5" fill="var(--floral-lavender)"/>
+          <circle cx="80" cy="40" r="2" fill="var(--floral-lavender-light)"/>
+        </g>
+        <g opacity="0.5">
+          <circle cx="135" cy="15" r="4" fill="var(--floral-lavender)"/>
+          <circle cx="135" cy="15" r="1.5" fill="var(--floral-lavender-light)"/>
+        </g>
       </svg>
     </div>
     <div class="floral-corner floral-br" aria-hidden="true">
-      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M60 185 Q100 130 140 90 Q165 55 190 10" stroke="var(--floral-stem)" stroke-width="2" fill="none" stroke-linecap="round"/>
-        <ellipse cx="90" cy="145" rx="8" ry="16" transform="rotate(30 90 145)" fill="var(--floral-leaf)"/>
-        <ellipse cx="120" cy="100" rx="7" ry="14" transform="rotate(40 120 100)" fill="var(--floral-leaf)"/>
-        <ellipse cx="150" cy="60" rx="8" ry="15" transform="rotate(50 150 60)" fill="var(--floral-leaf)"/>
-        <ellipse cx="175" cy="30" rx="7" ry="13" transform="rotate(55 175 30)" fill="var(--floral-leaf)"/>
-        <circle cx="100" cy="160" r="9" fill="var(--floral-blue)" opacity="0.7"/>
-        <circle cx="98" cy="157" r="5" fill="var(--floral-blue-light)" opacity="0.8"/>
-        <circle cx="140" cy="85" r="8" fill="var(--floral-blue)" opacity="0.6"/>
-        <circle cx="138" cy="83" r="4" fill="var(--floral-blue-light)" opacity="0.8"/>
-        <circle cx="185" cy="15" r="7" fill="var(--floral-blue)" opacity="0.6"/>
-        <circle cx="183" cy="13" r="4" fill="var(--floral-blue-light)" opacity="0.8"/>
-        <circle cx="110" cy="125" r="4" fill="var(--floral-lavender)" opacity="0.7"/>
-        <circle cx="160" cy="50" r="4" fill="var(--floral-lavender)" opacity="0.7"/>
+      <svg viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M55 230 Q95 165 135 115 Q170 65 210 30 Q230 15 235 5" stroke="var(--floral-stem)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+        <!-- Sage/olive leaves -->
+        <ellipse cx="85" cy="190" rx="9" ry="20" transform="rotate(30 85 190)" fill="var(--floral-leaf-sage)" opacity="0.6"/>
+        <ellipse cx="110" cy="150" rx="8" ry="17" transform="rotate(40 110 150)" fill="var(--floral-leaf-olive)" opacity="0.55"/>
+        <ellipse cx="140" cy="100" rx="9" ry="19" transform="rotate(50 140 100)" fill="var(--floral-leaf-sage)" opacity="0.6"/>
+        <ellipse cx="170" cy="60" rx="8" ry="17" transform="rotate(55 170 60)" fill="var(--floral-leaf-olive)" opacity="0.55"/>
+        <ellipse cx="200" cy="30" rx="9" ry="18" transform="rotate(60 200 30)" fill="var(--floral-leaf-sage)" opacity="0.6"/>
+        <!-- Outline leaves -->
+        <ellipse cx="100" cy="170" rx="7" ry="14" transform="rotate(35 100 170)" fill="none" stroke="var(--floral-leaf)" stroke-width="1" opacity="0.4"/>
+        <ellipse cx="155" cy="80" rx="7" ry="14" transform="rotate(48 155 80)" fill="none" stroke="var(--floral-leaf)" stroke-width="1" opacity="0.4"/>
+        <ellipse cx="215" cy="20" rx="6" ry="12" transform="rotate(58 215 20)" fill="none" stroke="var(--floral-leaf)" stroke-width="1" opacity="0.4"/>
+        <!-- Periwinkle blue flowers -->
+        <g opacity="0.7">
+          <circle cx="75" cy="205" r="11" fill="var(--floral-blue)"/>
+          <circle cx="78" cy="201" r="6" fill="var(--floral-blue-light)"/>
+          <circle cx="72" cy="208" r="4" fill="var(--floral-blue-deep)" opacity="0.6"/>
+          <circle cx="75" cy="205" r="3" fill="var(--floral-yellow)" opacity="0.8"/>
+        </g>
+        <g opacity="0.65">
+          <circle cx="125" cy="135" r="10" fill="var(--floral-blue)"/>
+          <circle cx="128" cy="131" r="5" fill="var(--floral-blue-light)"/>
+          <circle cx="122" cy="137" r="3" fill="var(--floral-blue-deep)" opacity="0.6"/>
+          <circle cx="125" cy="135" r="2.5" fill="var(--floral-yellow)" opacity="0.8"/>
+        </g>
+        <g opacity="0.6">
+          <circle cx="180" cy="45" r="10" fill="var(--floral-blue)"/>
+          <circle cx="183" cy="41" r="5" fill="var(--floral-blue-light)"/>
+          <circle cx="177" cy="47" r="3" fill="var(--floral-blue-deep)" opacity="0.6"/>
+          <circle cx="180" cy="45" r="2.5" fill="var(--floral-yellow)" opacity="0.8"/>
+        </g>
+        <!-- Lavender star flowers -->
+        <g opacity="0.6">
+          <circle cx="100" cy="120" r="5" fill="var(--floral-lavender)"/>
+          <circle cx="100" cy="120" r="2" fill="var(--floral-lavender-light)"/>
+        </g>
+        <g opacity="0.5">
+          <circle cx="160" cy="65" r="5" fill="var(--floral-lavender)"/>
+          <circle cx="160" cy="65" r="2" fill="var(--floral-lavender-light)"/>
+        </g>
+        <g opacity="0.5">
+          <circle cx="220" cy="15" r="4" fill="var(--floral-lavender)"/>
+          <circle cx="220" cy="15" r="1.5" fill="var(--floral-lavender-light)"/>
+        </g>
       </svg>
     </div>
 
@@ -178,9 +236,11 @@
   <!-- ===== CHANDLA VIDHI (Formal Invitation) ===== -->
   <section class="section section-invitation" id="invitation">
     <div class="section-divider" aria-hidden="true">
+      <span class="divider-dot"></span>
       <span class="divider-line"></span>
       <span class="divider-diamond"></span>
       <span class="divider-line"></span>
+      <span class="divider-dot"></span>
     </div>
 
     <div class="invitation-card">
@@ -225,9 +285,11 @@
   <!-- ===== SCHEDULE & VENUE ===== -->
   <section class="section section-details" id="details">
     <div class="section-divider" aria-hidden="true">
+      <span class="divider-dot"></span>
       <span class="divider-line"></span>
       <span class="divider-diamond"></span>
       <span class="divider-line"></span>
+      <span class="divider-dot"></span>
     </div>
 
     <h2 class="section-title-en">Event Details</h2>
@@ -293,9 +355,11 @@
   <!-- ===== CLOSING & RSVP ===== -->
   <section class="section section-closing" id="closing">
     <div class="section-divider" aria-hidden="true">
+      <span class="divider-dot"></span>
       <span class="divider-line"></span>
       <span class="divider-diamond"></span>
       <span class="divider-line"></span>
+      <span class="divider-dot"></span>
     </div>
 
     <div class="closing-card">

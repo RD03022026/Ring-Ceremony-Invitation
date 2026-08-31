@@ -1,42 +1,53 @@
 /* ============================================
    Engagement Invitation — Dhruvi & Rooshit
-   Design: Traditional Indian, Cream/Gold/Green
+   Design: Matching original PDF invitation
+   Cream background, teal-green, terracotta, gold
    ============================================ */
 
 /* --- Design Tokens --- */
 :root,
 [data-theme='light'] {
-  /* Paper / Surfaces */
-  --color-bg: #FBF7EE;
-  --color-surface: #FDFBF5;
-  --color-surface-2: #F7F2E6;
-  --color-surface-offset: #F0EADB;
+  /* Paper / Surfaces — warm ivory like the PDF */
+  --color-bg: #FAF7EE;
+  --color-surface: #FDFAF2;
+  --color-surface-2: #F5F0E4;
+  --color-surface-offset: #F0E9D9;
   --color-divider: #E5DCC8;
   --color-border: #D9CCB0;
 
-  /* Text */
-  --color-text: #2D2418;
-  --color-text-muted: #6B5D48;
-  --color-text-faint: #A89880;
-  --color-text-inverse: #FBF7EE;
+  /* Text — teal-green for headings, terracotta for body (matching PDF) */
+  --color-text: #1B3838;
+  --color-text-heading: #1B3838;
+  --color-text-body: #C45538;
+  --color-text-muted: #8A7A6A;
+  --color-text-faint: #B8A898;
+  --color-text-inverse: #FAF7EE;
 
   /* Accents */
   --gold: #C9A227;
   --gold-light: #E8C84E;
   --gold-dark: #A07D1A;
-  --green: #2D5A3D;
-  --green-light: #4A7A5C;
-  --green-dark: #1B3D2A;
+  --green: #1B3838;
+  --green-light: #2D5A4A;
+  --green-dark: #0F2828;
+  --terracotta: #C45538;
+  --terracotta-light: #D15B41;
+  --terracotta-dark: #A04528;
 
-  /* Floral colors */
+  /* Floral colors — matching PDF watercolor palette */
   --floral-blue: #7BA5C4;
   --floral-blue-light: #A8C8DE;
+  --floral-blue-deep: #5B8AAA;
   --floral-lavender: #B8A0C8;
-  --floral-leaf: #6B8E5A;
+  --floral-lavender-light: #D0BCE0;
+  --floral-leaf: #8AAB6A;
+  --floral-leaf-sage: #9CB87C;
+  --floral-leaf-olive: #7A9B5A;
   --floral-stem: #8B7355;
+  --floral-yellow: #E8C84E;
 
   /* Paper texture */
-  --paper-dark: #2D2418;
+  --paper-dark: #1B3838;
 
   /* Radius */
   --radius-sm: 0.375rem;
@@ -79,9 +90,9 @@
   --space-32: 8rem;
 
   /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(45, 36, 24, 0.08);
-  --shadow-md: 0 4px 16px rgba(45, 36, 24, 0.1);
-  --shadow-lg: 0 12px 40px rgba(45, 36, 24, 0.15);
+  --shadow-sm: 0 1px 3px rgba(27, 56, 56, 0.08);
+  --shadow-md: 0 4px 16px rgba(27, 56, 56, 0.1);
+  --shadow-lg: 0 12px 40px rgba(27, 56, 56, 0.15);
 
   /* Content */
   --content-narrow: 640px;
@@ -98,6 +109,8 @@
   --color-border: #4A3F2D;
 
   --color-text: #E8DCC4;
+  --color-text-heading: #7AB89A;
+  --color-text-body: #E8A878;
   --color-text-muted: #B09878;
   --color-text-faint: #7A6B52;
   --color-text-inverse: #1A1610;
@@ -105,9 +118,12 @@
   --gold: #E8C84E;
   --gold-light: #F0D660;
   --gold-dark: #C9A227;
-  --green: #6B9E7A;
-  --green-light: #8AB898;
-  --green-dark: #4A7A5C;
+  --green: #7AB89A;
+  --green-light: #9CC8B0;
+  --green-dark: #4A7A6A;
+  --terracotta: #E8A878;
+  --terracotta-light: #F0B888;
+  --terracotta-dark: #C08060;
 
   --floral-blue: #5A8AAA;
   --floral-blue-light: #7BA5C4;
@@ -147,8 +163,9 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   background-image: 
-    radial-gradient(circle at 20% 30%, rgba(201, 162, 39, 0.04) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, rgba(45, 90, 61, 0.04) 0%, transparent 50%);
+    radial-gradient(circle at 15% 20%, rgba(123, 165, 196, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(184, 160, 200, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgba(201, 162, 39, 0.02) 0%, transparent 60%);
   overflow-x: hidden;
 }
 
@@ -227,21 +244,24 @@ p, li {
   text-align: center;
 }
 
-/* Floral corners */
+/* Floral corners — watercolor style */
 .floral-corner {
   position: absolute;
-  width: clamp(120px, 18vw, 220px);
-  height: clamp(120px, 18vw, 220px);
+  width: clamp(140px, 22vw, 280px);
+  height: clamp(140px, 22vw, 280px);
   z-index: 1;
   pointer-events: none;
 }
 .floral-tl { top: 0; left: 0; }
 .floral-br { bottom: 0; right: 0; }
 
-/* Ganesha / decorative icon */
+/* Ganesha / decorative icon — top-right like PDF */
 .ganesha-icon {
-  width: clamp(60px, 8vw, 90px);
-  margin-bottom: var(--space-4);
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  width: clamp(50px, 7vw, 75px);
+  z-index: 2;
   opacity: 0.9;
   animation: fadeInDown 1s ease-out;
 }
@@ -338,7 +358,7 @@ p, li {
   font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: 600;
-  color: var(--color-text);
+  color: var(--green);
   letter-spacing: 0.02em;
 }
 
@@ -393,7 +413,7 @@ p, li {
   margin: 0 auto;
 }
 
-/* Section divider */
+/* Section divider — gold with diamond like PDF */
 .section-divider {
   display: flex;
   align-items: center;
@@ -404,7 +424,7 @@ p, li {
 
 .divider-line {
   flex: 1;
-  max-width: 80px;
+  max-width: 100px;
   height: 1px;
   background: linear-gradient(to right, transparent, var(--gold), transparent);
 }
@@ -414,7 +434,15 @@ p, li {
   height: 8px;
   background: var(--gold);
   transform: rotate(45deg);
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.divider-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--gold);
+  border-radius: 50%;
+  opacity: 0.6;
 }
 
 /* ============================================
@@ -464,6 +492,17 @@ p, li {
   color: var(--green);
   text-align: center;
   margin-bottom: var(--space-8);
+  position: relative;
+}
+
+.section-title-gu::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: var(--green);
+  margin: var(--space-3) auto 0;
+  opacity: 0.6;
 }
 
 .invitation-body {
@@ -474,11 +513,12 @@ p, li {
   text-align: center;
 }
 
+/* Gujarati text — terracotta body like PDF */
 .gu-text {
   font-family: var(--font-gujarati);
   font-size: var(--text-base);
   line-height: 1.8;
-  color: var(--color-text);
+  color: var(--terracotta);
 }
 
 .gu-muted {
@@ -498,7 +538,7 @@ p, li {
 }
 
 .gu-closing {
-  color: var(--green);
+  color: var(--terracotta);
   font-weight: 500;
   margin-top: var(--space-2);
 }
@@ -531,7 +571,7 @@ p, li {
   font-family: var(--font-gujarati);
   font-size: var(--text-base);
   font-weight: 500;
-  color: var(--gold-dark);
+  color: var(--terracotta-light);
 }
 
 .tithi-block {
@@ -612,7 +652,7 @@ p, li {
 .inviters-list li {
   font-family: var(--font-gujarati);
   font-size: var(--text-sm);
-  color: var(--color-text);
+  color: var(--terracotta);
   line-height: 1.6;
 }
 
@@ -671,7 +711,7 @@ p, li {
   font-family: var(--font-gujarati);
   font-size: var(--text-base);
   line-height: 1.8;
-  color: var(--color-text);
+  color: var(--terracotta);
   max-width: 50ch;
   margin: 0 auto var(--space-8);
 }
@@ -799,6 +839,12 @@ p, li {
     left: 8px;
     right: 8px;
     bottom: 8px;
+  }
+
+  .ganesha-icon {
+    top: 1rem;
+    right: 3.5rem;
+    width: 45px;
   }
 }
 
