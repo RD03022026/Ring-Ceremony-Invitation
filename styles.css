@@ -162,11 +162,16 @@ body {
   font-size: var(--text-base);
   color: var(--color-text);
   background-color: var(--color-bg);
-  background-image: 
-    radial-gradient(circle at 15% 20%, rgba(123, 165, 196, 0.06) 0%, transparent 40%),
-    radial-gradient(circle at 85% 80%, rgba(184, 160, 200, 0.05) 0%, transparent 40%),
-    radial-gradient(circle at 50% 50%, rgba(201, 162, 39, 0.02) 0%, transparent 60%);
+  background-image: url('assets/bg-floral-light.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   overflow-x: hidden;
+}
+
+[data-theme='dark'] body {
+  background-image: url('assets/bg-floral-dark.png');
 }
 
 img, picture, video, canvas, svg {
@@ -255,21 +260,19 @@ p, li {
 .floral-tl { top: 0; left: 0; }
 .floral-br { bottom: 0; right: 0; }
 
-/* Ganesha / decorative icon — top-right like PDF */
+/* Ganesha gold icon — top right like PDF */
 .ganesha-icon {
   position: absolute;
   top: 1.5rem;
   right: 5rem;
-  width: clamp(50px, 7vw, 75px);
+  width: clamp(50px, 7vw, 80px);
   z-index: 2;
-  opacity: 0.9;
   animation: fadeInDown 1s ease-out;
 }
 
 .ganesha-icon img {
   width: 100%;
   height: auto;
-  border-radius: 50%;
 }
 
 /* Invitation label */
@@ -413,35 +416,24 @@ p, li {
   margin: 0 auto;
 }
 
-/* Section divider — gold with diamond like PDF */
+/* Section divider — gold image from PDF */
 .section-divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-4);
   margin-bottom: var(--space-12);
 }
 
-.divider-line {
-  flex: 1;
-  max-width: 100px;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--gold), transparent);
-}
-
-.divider-diamond {
-  width: 8px;
-  height: 8px;
-  background: var(--gold);
-  transform: rotate(45deg);
+.divider-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   opacity: 0.8;
 }
 
-.divider-dot {
-  width: 4px;
-  height: 4px;
-  background: var(--gold);
-  border-radius: 50%;
+.divider-img-small {
+  width: 200px;
+  height: auto;
   opacity: 0.6;
 }
 
@@ -475,6 +467,19 @@ p, li {
   margin-bottom: var(--space-8);
   padding-bottom: var(--space-6);
   border-bottom: 1px solid var(--color-divider);
+}
+
+.deity-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.deity-img {
+  height: clamp(80px, 12vw, 130px);
+  width: auto;
 }
 
 .sanskrit-line {
@@ -676,6 +681,18 @@ p, li {
   color: var(--color-surface);
 }
 
+/* Couple illustration from PDF */
+.couple-illustration {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-8);
+}
+
+.couple-illustration img {
+  height: clamp(200px, 30vw, 350px);
+  width: auto;
+}
+
 /* ============================================
    CLOSING SECTION
    ============================================ */
@@ -845,6 +862,18 @@ p, li {
     top: 1rem;
     right: 3.5rem;
     width: 45px;
+  }
+
+  .deity-images {
+    gap: var(--space-3);
+  }
+
+  .deity-img {
+    height: 70px;
+  }
+
+  .couple-illustration img {
+    height: 180px;
   }
 }
 
